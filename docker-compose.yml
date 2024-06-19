@@ -2,9 +2,10 @@ version: '2.2'
 services:
     sharelatex:
         restart: always
-        # Server Pro users:
-        # image: quay.io/sharelatex/sharelatex-pro
-        image: sharelatex-home/sharelatex
+        # if you want to use my package on the ghcr, use this:
+        # image: ghcr.io/gspeed0689/overleaf:v0.unknown-sharelatex
+        # otherwise, put your image here:
+        # image: 
         container_name: sharelatex
         depends_on:
             mongo:
